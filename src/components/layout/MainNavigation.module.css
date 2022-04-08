@@ -1,8 +1,13 @@
 .header {
-    background-color: #77002e;
+    background-image: url('https://images.unsplash.com/photo-1493243350443-9e3048ce7288?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1640&q=80');
+    background-repeat: no-repeat;
+    background-size: auto;
     width: 100%;
-    height: 5rem;
+    height: 8rem;
     padding: 0 10%;
+    margin-top: 0rem;
+    margin-left: 5rem;
+
 
     display: flex;
     align-items: center;
@@ -27,21 +32,23 @@
     margin-left: 3rem;
 }
 
-.header a{
+.header a {
     text-decoration: none;
     font-size: 1.5rem;
-    color: #fcb8d2;
+    color: #510000;
 }
 
 .header a:hover,
 .header a:active,
-.header a:focus{
-    color:white;
+.header a:focus {
+    color: #946079;
 }
-.badge{
-    background-color:white;
-    color:#77002e;
+
+.badge {
+    background-color: rgba(255, 255, 255, 0.998);
+    color: #77002e;
     border-radius: 10px;
-    padding:0 1rem;
+    padding: 0 2rem;
     margin-left: 1rem;
+
 }

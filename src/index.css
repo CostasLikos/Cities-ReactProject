@@ -11,3 +11,24 @@ body{
 h1,h2{
   color: #333333;
 }
+button {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #640020;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+button:hover {background-color: #000000}
+
+button:active {
+  background-color: #f73c7a;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

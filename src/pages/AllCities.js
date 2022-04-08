@@ -47,13 +47,13 @@ function AllCitiesPage() {
 
 
     return <div>
-        <h1>{count}</h1>
-        <button onClick={() => setCount(count + 1)}> Click</button>
+        {/* <h1>{count}</h1>
+        <button onClick={() => setCount(count + 1)}> Click</button> */}
         <div>
             {count > 2005 && <h1>All Cities</h1>}
         </div>
 
-        <button onClick={() => setVisible(!visible)}>Hide Cities</button>
+        <button class="glow-on-hover" type="button" onClick={() => setVisible(!visible)}>{visible?'Hide Cities':'Show Cities'}</button>
 
         {visible && <CityList cities={loadedCities}/>}
 
