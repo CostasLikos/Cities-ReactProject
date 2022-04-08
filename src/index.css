@@ -25,10 +25,10 @@ button {
   border-radius: 15px;
   box-shadow: 0 5px #999;
 }
-button:hover {background-color: #000000}
+button:hover {background-color: #272727}
 
 button:active {
-  background-color: #f73c7a;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  background-color: #f278a1b5;
+  box-shadow: 0 1px #666;
+  transform: translateY(5px);
 }
