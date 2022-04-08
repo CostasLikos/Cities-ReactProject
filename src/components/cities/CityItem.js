@@ -1,8 +1,32 @@
 import classes from './CityItem.module.css'
 import Card from '../ui/Card'
+import { useContext } from 'react';
+import FavoritesContext from '../store/favorites-context';
 
 
 function CityItem(props) {
+
+    const FavoritesCtx = useContext(FavoritesContext);
+    const itemIsFavorite = FavoritesCtx.itemIsFavorite(props.id)
+
+    function toggleFavoritesStatuesHandler() {
+        if (itemIsFavorite) {
+            FavoritesCtx.removeFavorite(props.id)
+        }
+        else {
+            FavoritesCtx.addFavorite(
+                {
+                    id: props.id,
+                    title: props.title,
+                    description: props.description,
+                    image: props.image,
+                    country: props.country
+                }
+            )
+        }
+    }
+
+
 
     return (
         <li className={classes.item}     >
@@ -18,7 +42,7 @@ function CityItem(props) {
                 </div>
 
                 <div className={classes.actions}    >
-                    <button>Add to Favorites</button>
+                    <button onClick={toggleFavoritesStatuesHandler}>{itemIsFavorite?'Remove from Favorites':'Add to Favorites'}</button>
                 </div>
             </Card>
 
