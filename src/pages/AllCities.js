@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 function AllCitiesPage() {
 
-    const [count, setCount] = useState(2000);
+    const [count] = useState(2000);
     const [visible, setVisible] = useState(true);
 
     const [isLoading, setIsLoading] = useState(true);
